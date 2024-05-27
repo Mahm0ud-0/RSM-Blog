@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="main.css">
+    <title>RSM - الرئيسية</title>
+</head>
+<body class="bg-sky-50">
+
+    <!-- Header -->
+    <header class="w-full bg-sky-600 text-neutral-100 fixed top-0 shadow-lg z-10">
+        
+        <div class="container mx-auto flex flex-row justify-between items-center h-16 md:h-auto px-5">
+
+            <!-- logo -->
+            <div class="logo md:mr-8">
+                <a href="#">
+                    <img src="./assets/cropped-RSM-2023-Logo2-3-80x40.png" alt="RSM logo">
+                </a>
+            </div>
+            
+            <!-- navigation bar -->
+            <nav class="h-full ">
+                <div id="nav-container" class="absolute md:relative h-screen md:h-full w-full md:w-auto left-0 top-16 md:left-auto md:top-auto pb-4 md:py-0 md:space-x-3 -translate-y-[120vh] md:translate-y-0">
+                    <ul class="w-11/12 md:w-auto mx-auto flex flex-col md:flex-row rounded-b-3xl md:rounded-none overflow-hidden md:space-x-3 text-lg">
+                        <li>
+                            <a href="#" class="md:ml-3 active">الرئيسية</a>
+                        </li>
+                        <li>
+                            <a href="#">تقنية</a>
+                        </li>
+                        <li class="flex flex-col justify-center items-center p-0 m-0">
+                            <button class="flex items-center justify-center p-5 px-4 bg-sky-600 hover:bg-sky-500 w-full">
+                                    مراجعات
+                                <i class="fas fa-angle-down text-xl pr-1 justify-self-end" id="dropdown-arrow"></i>
+                            </button>
+                            <ul class="inner-menu w-full md:w-[125px] flex flex-col md:absolute overflow-hidden top-full md:rounded-b-lg">
+                                <li class="w-full"><a href="#" class="w-full bg-sky-500 hover:bg-sky-600">لابتوب</a></li>
+                                <li class="w-full"><a href="#" class="w-full bg-sky-500 hover:bg-sky-600">لابتوب</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">هواتف</a>
+                        </li>
+                        <li>
+                            <a href="#">أخبار</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="md:hidden">
+                <i class="fas fa-bars w-9 h-9 text-3xl text-center cursor-pointer" id="navToggle"></i>
+            </div>
+
+    </div>
+    </header>
+
+    <!-- promotion banner -->
+    <section class="banner">
+        <h1 class="text-3xl md:text-5xl font-bold mt-6">
+            مدونة RSM Tech
+        </h1>
+        <p class="w-full md:w-1/2 lg:w-2/5 my-7">
+            ننشر كل ما هو جديد في التقنية بالاضافة لمقالات تعليمية وخدمية تنفع القارئ وتفيده في حياة اليومية
+        </p>
+        <a href="#" class="bg-sky-600 py-3 px-5 my-6 rounded-lg hover:bg-sky-500">انظر للمقالات</a>
+    </section>
+
+
+    <main class="mx-auto py-20 min-h-screen">
+        
+        <!-- last published articles cards -->
+        <section>
+            <h1 class="text-center text-4xl text-sky-900 mt-32 mb-16">آخر ما نشر</h1>
+            <div class="flex flex-row flex-wrap justify-center items-center w-full">
+                <!-- card -->
+                <div class="card">
+                    <a href="#" class="w-full">
+                        <img src="./assets/iso.png.webp" alt="" class="w-full">
+                        <h3 class="p-4 text-lg">
+                            كيفية إبقاء الكمبيوتر المحمول الذي يعمل بنظام Windows مستيقظًا مع إغلاق الغطاء
+                        </h3>
+                    </a>
+                    <article class="px-4 text-sm text-gray-500 ">
+                        على الرغم من أن جهاز الكمبيوتر المحمول العامل بنظام Windows يعمل بشكل ممتاز أثناء التنقل، إلا أنه يمكنك تحويله إلى محطة عمل مناسبة في المنزل أيضًا. من خلال توصيل لوحة المفاتيح والفأرة والشاشة الخارجية، يمكن للكمبيوتر المحمول العمل كجهاز سطح…
+                    </article>
+                    <a href="#" class="p-4 my-3 block text-sky-700 hover:text-sky-500">اقرأ المزيد...</a>
+                </div>
+                <!-- card -->
+                <div class="card">
+                    <a href="#" class="w-full">
+                        <img src="./assets/iso.png.webp" alt="" class="w-full">
+                        <h3 class="p-4 text-lg">
+                            كيفية إبقاء الكمبيوتر المحمول الذي يعمل بنظام Windows مستيقظًا مع إغلاق الغطاء
+                        </h3>
+                    </a>
+                    <article class="px-4 text-sm text-gray-500 ">
+                        على الرغم من أن جهاز الكمبيوتر المحمول العامل بنظام Windows يعمل بشكل ممتاز أثناء التنقل، إلا أنه يمكنك تحويله إلى محطة عمل مناسبة في المنزل أيضًا. من خلال توصيل لوحة المفاتيح والفأرة والشاشة الخارجية، يمكن للكمبيوتر المحمول العمل كجهاز سطح…
+                    </article>
+                    <a href="#" class="p-4 my-3 block text-sky-700 hover:text-sky-500">اقرأ المزيد...</a>
+                </div>
+                <!-- card -->
+                <div class="card">
+                    <a href="#" class="w-full">
+                        <img src="./assets/iso.png.webp" alt="" class="w-full">
+                        <h3 class="p-4 text-lg">
+                            كيفية إبقاء الكمبيوتر المحمول الذي يعمل بنظام Windows مستيقظًا مع إغلاق الغطاء
+                        </h3>
+                    </a>
+                    <article class="px-4 text-sm text-gray-500 ">
+                        على الرغم من أن جهاز الكمبيوتر المحمول العامل بنظام Windows يعمل بشكل ممتاز أثناء التنقل، إلا أنه يمكنك تحويله إلى محطة عمل مناسبة في المنزل أيضًا. من خلال توصيل لوحة المفاتيح والفأرة والشاشة الخارجية، يمكن للكمبيوتر المحمول العمل كجهاز سطح…
+                    </article>
+                    <a href="#" class="p-4 my-3 block text-sky-700 hover:text-sky-500">اقرأ المزيد...</a>
+                </div>
+            </div>
+        </section>
+        <!-- popular articles cards -->
+        <section>
+            <h1 class="text-center text-4xl text-sky-900 mt-32 mb-16">المقالات الأكثر شعبية في مدونتنا</h1>
+            <div class="flex flex-row flex-wrap justify-center items-center w-full">
+                <!-- card -->
+                <div class="card">
+                    <a href="#" class="w-full">
+                        <img src="./assets/iso.png.webp" alt="" class="w-full">
+                        <h3 class="p-4 text-lg">
+                            كيفية إبقاء الكمبيوتر المحمول الذي يعمل بنظام Windows مستيقظًا مع إغلاق الغطاء
+                        </h3>
+                    </a>
+                    <article class="px-4 text-sm text-gray-500 ">
+                        على الرغم من أن جهاز الكمبيوتر المحمول العامل بنظام Windows يعمل بشكل ممتاز أثناء التنقل، إلا أنه يمكنك تحويله إلى محطة عمل مناسبة في المنزل أيضًا. من خلال توصيل لوحة المفاتيح والفأرة والشاشة الخارجية، يمكن للكمبيوتر المحمول العمل كجهاز سطح…
+                    </article>
+                    <a href="#" class="p-4 my-3 block text-sky-700 hover:text-sky-500">اقرأ المزيد...</a>
+                </div>
+                <!-- card -->
+                <div class="card">
+                    <a href="#" class="w-full">
+                        <img src="./assets/iso.png.webp" alt="" class="w-full">
+                        <h3 class="p-4 text-lg">
+                            كيفية إبقاء الكمبيوتر المحمول الذي يعمل بنظام Windows مستيقظًا مع إغلاق الغطاء
+                        </h3>
+                    </a>
+                    <article class="px-4 text-sm text-gray-500 ">
+                        على الرغم من أن جهاز الكمبيوتر المحمول العامل بنظام Windows يعمل بشكل ممتاز أثناء التنقل، إلا أنه يمكنك تحويله إلى محطة عمل مناسبة في المنزل أيضًا. من خلال توصيل لوحة المفاتيح والفأرة والشاشة الخارجية، يمكن للكمبيوتر المحمول العمل كجهاز سطح…
+                    </article>
+                    <a href="#" class="p-4 my-3 block text-sky-700 hover:text-sky-500">اقرأ المزيد...</a>
+                </div>
+                <!-- card -->
+                <div class="card">
+                    <a href="#" class="w-full">
+                        <img src="./assets/iso.png.webp" alt="" class="w-full">
+                        <h3 class="p-4 text-lg">
+                            كيفية إبقاء الكمبيوتر المحمول الذي يعمل بنظام Windows مستيقظًا مع إغلاق الغطاء
+                        </h3>
+                    </a>
+                    <article class="px-4 text-sm text-gray-500 ">
+                        على الرغم من أن جهاز الكمبيوتر المحمول العامل بنظام Windows يعمل بشكل ممتاز أثناء التنقل، إلا أنه يمكنك تحويله إلى محطة عمل مناسبة في المنزل أيضًا. من خلال توصيل لوحة المفاتيح والفأرة والشاشة الخارجية، يمكن للكمبيوتر المحمول العمل كجهاز سطح…
+                    </article>
+                    <a href="#" class="p-4 my-3 block text-sky-700 hover:text-sky-500">اقرأ المزيد...</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="w-full text-center m-0  text-neutral-50  mt-20">
+        <div class="bg-sky-600 pt-10 px-10">
+            <h4 class="text-lg mb-3">RSM Tech مدونة</h4>
+            <p class="opacity-90 text-xs mb-3">
+                ننشر كل ما هو جديد في التقنية بالاضافة لمقالات تعليمية وخدمية تنفع القارئ وتفيده في حياة اليومية
+            </p>
+            <div class=" w-11/12 md:w-1/3 mx-auto py-3 flex justify-evenly">
+                <a href="">
+                    <i class="fab fa-facebook text-lg"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-telegram-plane text-lg"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-youtube text-lg"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram text-lg"></i>
+                </a>
+            </div>
+        </div>
+        <div class="bg-sky-700 p-3 text-xs">
+            Copyright © 2024 RSM Blog | Powered by RSM Blog
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
